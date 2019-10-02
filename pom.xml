@@ -27,6 +27,24 @@
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
+            <artifactId>com.ge.research.sadl.parent</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.research.sadl</groupId>
+            <artifactId>com.ge.research.sadl.reasoner</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.research.sadl</groupId>
+            <artifactId>com.ge.research.sadl.server</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.research.sadl</groupId>
             <artifactId>reasoner-api</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -168,6 +186,39 @@
                         <configuration>
                             <file>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${project.version}.jar</file>
                             <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.ge.research.sadl.parent</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.parent-${project.version}.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.parent-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.ge.research.sadl.reasoner</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.reasoner-${project.version}.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.reasoner-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.ge.research.sadl.server</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.server-${project.version}.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.server-${project.version}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
