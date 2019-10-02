@@ -173,7 +173,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
-                    <id>sadl-snapshot-repository</id>
+                    <repositoryId>sadl-snapshot-repository</repositoryId>
                     <url>file://${project.basedir}/repository</url>
                 </configuration>
                 <executions>
@@ -185,6 +185,7 @@
                         <phase>install</phase>
                         <configuration>
                             <file>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${project.version}.jar</file>
+                            <packaging>jar</packaging>
                             <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${project.version}.pom</pomFile>
                         </configuration>
                     </execution>
