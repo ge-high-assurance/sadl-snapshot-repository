@@ -10,10 +10,17 @@ repositories section in a pom.xml like this:
 
 **pom.xml**
 ```xml
+<!-- This microrepository has our SADL 3.2.0-SNAPSHOT dependencies -->
 <repositories>
     <repository>
         <id>sadl-snapshot-repository</id>
-        <url>https://github.com/raw/ge-high-assurance/sadl-snapshot-repository/master/repository</url>
+        <url>https://raw.github.com/ge-high-assurance/sadl-snapshot-repository/master/repository</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
     </repository>
 </repositories>
 ```
