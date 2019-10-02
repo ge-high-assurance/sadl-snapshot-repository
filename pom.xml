@@ -126,15 +126,15 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-install-plugin</artifactId>
+                <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
-                    <localRepositoryPath>${project.basedir}/repository</localRepositoryPath>
+                    <url>file://${project.basedir}/repository</url>
                 </configuration>
                 <executions>
                     <execution>
-                        <id>install-reasoner-api</id>
+                        <id>deploy-reasoner-api</id>
                         <goals>
-                            <goal>install-file</goal>
+                            <goal>deploy-file</goal>
                         </goals>
                         <phase>install</phase>
                         <configuration>
@@ -143,9 +143,9 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>install-reasoner-impl</id>
+                        <id>deploy-reasoner-impl</id>
                         <goals>
-                            <goal>install-file</goal>
+                            <goal>deploy-file</goal>
                         </goals>
                         <phase>install</phase>
                         <configuration>
@@ -154,9 +154,9 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>install-sadlserver-api</id>
+                        <id>deploy-sadlserver-api</id>
                         <goals>
-                            <goal>install-file</goal>
+                            <goal>deploy-file</goal>
                         </goals>
                         <phase>install</phase>
                         <configuration>
@@ -165,9 +165,9 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>install-sadlserver-impl</id>
+                        <id>deploy-sadlserver-impl</id>
                         <goals>
-                            <goal>install-file</goal>
+                            <goal>deploy-file</goal>
                         </goals>
                         <phase>install</phase>
                         <configuration>
