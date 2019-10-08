@@ -10,7 +10,7 @@ repositories section in a pom.xml like this:
 
 **pom.xml**
 ```xml
-<!-- This microrepository has our SADL 3.2.0-SNAPSHOT dependencies -->
+<!-- This microrepository has our SADL dependencies -->
 <repositories>
     <repository>
         <id>sadl-snapshot-repository</id>
@@ -61,12 +61,12 @@ mvn install
 - Update the SADL snapshot dependencies
 - Commit any new changes back to GitHub
 
-These steps will update 4 dependencies (the SADLServer and Reasoner
-poms and jars) in this repository, although any Maven build using
-these 4 dependencies will bring in another 10-20 transitive
+These steps will update the snapshot versions of the SADL 
+dependencies in this repository, although any Maven build using
+these dependencies will bring in another 10-20 transitive
 dependencies as well.  All of these transitive dependencies already
-have release versions stored in the central Maven repositories, so
-there is no need to store any of them in this repository too.
+have release versions in the central Maven repositories, so there
+is no need to store any of them in this repository too.
 
 ```bash
 # clone this project
