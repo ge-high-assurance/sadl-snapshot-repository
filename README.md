@@ -61,7 +61,7 @@ mvn install
 - Update the SADL snapshot dependencies
 - Commit any new changes back to GitHub
 
-These steps will update the snapshot versions of the SADL 
+These steps will update the snapshot versions of the SADL
 dependencies in this repository, although any Maven build using
 these dependencies will bring in another 10-20 transitive
 dependencies as well.  All of these transitive dependencies already
