@@ -22,6 +22,27 @@
     <dependencies>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
+            <artifactId>com.ge.research.sadl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.research.sadl</groupId>
+            <artifactId>com.ge.research.sadl.ide</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.research.sadl</groupId>
+            <artifactId>com.ge.research.sadl.jena</artifactId>
+            <version>${project.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.ge.research.sadl</groupId>
+                    <artifactId>com.ge.research.sadl</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.jena-wrapper-for-sadl</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -177,6 +198,42 @@
                     <url>file://${project.basedir}/repository</url>
                 </configuration>
                 <executions>
+                    <execution>
+                        <id>deploy-com.ge.research.sadl</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl-${project.version}.jar</file>
+                            <packaging>jar</packaging>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.ge.research.sadl.ide</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.ide-${project.version}.jar</file>
+                            <packaging>jar</packaging>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.ide-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.ge.research.sadl.jena</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.jena-${project.version}.jar</file>
+                            <packaging>jar</packaging>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.jena-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
                     <execution>
                         <id>deploy-com.ge.research.sadl.jena-wrapper-for-sadl</id>
                         <goals>

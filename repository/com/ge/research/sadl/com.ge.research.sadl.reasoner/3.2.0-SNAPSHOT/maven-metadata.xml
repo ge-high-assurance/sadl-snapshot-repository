@@ -5,15 +5,15 @@
   <version>3.2.0-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20191010.173708</timestamp>
+      <timestamp>20191028.122951</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20191010173708</lastUpdated>
+    <lastUpdated>20191028122951</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.2.0-20191010.173708-1</value>
-        <updated>20191010173708</updated>
+        <value>3.2.0-20191028.122951-1</value>
+        <updated>20191028122951</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
