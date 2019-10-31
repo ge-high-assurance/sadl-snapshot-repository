@@ -4,7 +4,7 @@
 
     <groupId>com.ge.verdict</groupId>
     <artifactId>sadl-snapshot-repository</artifactId>
-    <version>3.2.0-SNAPSHOT</version>
+    <version>3.2.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>SADL Snapshot Repository</name>
@@ -23,6 +23,11 @@
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.research.sadl</groupId>
+            <artifactId>com.ge.research.sadl.errorgenerator</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -208,6 +213,18 @@
                             <file>${project.build.directory}/dependency/com.ge.research.sadl-${project.version}.jar</file>
                             <packaging>jar</packaging>
                             <pomFile>${project.build.directory}/dependency/com.ge.research.sadl-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.ge.research.sadl.errorgenerator</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.errorgenerator-${project.version}.jar</file>
+                            <packaging>jar</packaging>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.errorgenerator-${project.version}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
