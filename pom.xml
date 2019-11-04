@@ -89,6 +89,22 @@
             <artifactId>sadlserver-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.utc.utrc.hermes</groupId>
+            <artifactId>com.utc.utrc.hermes.osate.parent</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.utc.utrc.hermes</groupId>
+            <artifactId>com.utc.utrc.hermes.aadl.gen.iml</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.utc.utrc.hermes</groupId>
+            <artifactId>com.utc.utrc.hermes.aadl.gen.iml.test</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -338,6 +354,39 @@
                         <configuration>
                             <file>${project.build.directory}/dependency/sadlserver-impl-${project.version}.jar</file>
                             <pomFile>${project.build.directory}/dependency/sadlserver-impl-${project.version}.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.utc.utrc.hermes.osate.parent</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.osate.parent-1.0.0-SNAPSHOT.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.osate.parent-1.0.0-SNAPSHOT.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.utc.utrc.hermes.aadl.gen.iml</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml-1.0.0-SNAPSHOT.jar</file>
+                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml-1.0.0-SNAPSHOT.pom</pomFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>deploy-com.utc.utrc.hermes.aadl.gen.iml.test</id>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml.test-1.0.0-SNAPSHOT.jar</file>
+                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml.test-1.0.0-SNAPSHOT.pom</pomFile>
                         </configuration>
                     </execution>
                 </executions>
