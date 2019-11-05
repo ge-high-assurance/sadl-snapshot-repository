@@ -375,6 +375,7 @@
                         <phase>install</phase>
                         <configuration>
                             <file>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml-1.0.0-SNAPSHOT.jar</file>
+                            <packaging>jar</packaging>
                             <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml-1.0.0-SNAPSHOT.pom</pomFile>
                         </configuration>
                     </execution>
@@ -386,6 +387,7 @@
                         <phase>install</phase>
                         <configuration>
                             <file>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml.test-1.0.0-SNAPSHOT.jar</file>
+                            <packaging>jar</packaging>
                             <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml.test-1.0.0-SNAPSHOT.pom</pomFile>
                         </configuration>
                     </execution>
