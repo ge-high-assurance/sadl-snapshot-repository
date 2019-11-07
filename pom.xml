@@ -483,6 +483,17 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
                     <execution>
+                        <id>fix-line-endings</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>bash</executable>
+                            <commandlineArgs>-c 'case "$OSTYPE" in cygwin*) find target/dependency -name \*.pom | xargs dos2unix -k ;; esac'</commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>fix-permissions</id>
                         <phase>install</phase>
                         <goals>
