@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.utc.utrc.hermes.iml</groupId>
+  <artifactId>com.utc.utrc.hermes.iml.parent</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20191112163518</lastUpdated>
+  </versioning>
+</metadata>

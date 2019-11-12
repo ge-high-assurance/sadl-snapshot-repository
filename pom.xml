@@ -90,44 +90,14 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.utc.utrc.hermes</groupId>
-            <artifactId>com.utc.utrc.hermes.osate.parent</artifactId>
+            <groupId>com.utc.utrc.hermes.iml</groupId>
+            <artifactId>com.utc.utrc.hermes.iml.parent</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>com.utc.utrc.hermes</groupId>
-            <artifactId>com.utc.utrc.hermes.aadl.gen.iml</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.utc.utrc.hermes</groupId>
-            <artifactId>com.utc.utrc.hermes.aadl.gen.iml.test</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.osate</groupId>
-            <artifactId>org.osate.aadl2</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.osate</groupId>
-            <artifactId>org.osate.aadl2.modelsupport</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.osate</groupId>
-            <artifactId>org.osate.annexsupport</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.osate</groupId>
-            <artifactId>org.osate.xtext.aadl2</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.osate</groupId>
-            <artifactId>org.osate.xtext.aadl2.properties</artifactId>
+            <groupId>com.utc.utrc.hermes.iml</groupId>
+            <artifactId>com.utc.utrc.hermes.iml</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
@@ -382,98 +352,26 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>deploy-com.utc.utrc.hermes.osate.parent</id>
+                        <id>deploy-com.utc.utrc.hermes.iml.parent</id>
                         <goals>
                             <goal>deploy-file</goal>
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.osate.parent-1.0.0-SNAPSHOT.pom</file>
-                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.osate.parent-1.0.0-SNAPSHOT.pom</pomFile>
+                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.iml.parent-1.0.0-SNAPSHOT.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.iml.parent-1.0.0-SNAPSHOT.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
-                        <id>deploy-com.utc.utrc.hermes.aadl.gen.iml</id>
+                        <id>deploy-com.utc.utrc.hermes.iml</id>
                         <goals>
                             <goal>deploy-file</goal>
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml-1.0.0-SNAPSHOT.jar</file>
+                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.iml-1.0.0-SNAPSHOT.jar</file>
                             <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml-1.0.0-SNAPSHOT.pom</pomFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>deploy-com.utc.utrc.hermes.aadl.gen.iml.test</id>
-                        <goals>
-                            <goal>deploy-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml.test-1.0.0-SNAPSHOT.jar</file>
-                            <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.aadl.gen.iml.test-1.0.0-SNAPSHOT.pom</pomFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>deploy-org.osate.aadl2</id>
-                        <goals>
-                            <goal>deploy-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/dependency/org.osate.aadl2-1.0.0-SNAPSHOT.jar</file>
-                            <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/org.osate.aadl2-1.0.0-SNAPSHOT.pom</pomFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>deploy-org.osate.aadl2.modelsupport</id>
-                        <goals>
-                            <goal>deploy-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/dependency/org.osate.aadl2.modelsupport-1.0.0-SNAPSHOT.jar</file>
-                            <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/org.osate.aadl2.modelsupport-1.0.0-SNAPSHOT.pom</pomFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>deploy-org.osate.annexsupport</id>
-                        <goals>
-                            <goal>deploy-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/dependency/org.osate.annexsupport-1.0.0-SNAPSHOT.jar</file>
-                            <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/org.osate.annexsupport-1.0.0-SNAPSHOT.pom</pomFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>deploy-org.osate.xtext.aadl2</id>
-                        <goals>
-                            <goal>deploy-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/dependency/org.osate.xtext.aadl2-1.0.0-SNAPSHOT.jar</file>
-                            <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/org.osate.xtext.aadl2-1.0.0-SNAPSHOT.pom</pomFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>deploy-org.osate.xtext.aadl2.properties</id>
-                        <goals>
-                            <goal>deploy-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/dependency/org.osate.xtext.aadl2.properties-1.0.0-SNAPSHOT.jar</file>
-                            <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/org.osate.xtext.aadl2.properties-1.0.0-SNAPSHOT.pom</pomFile>
+                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.iml-1.0.0-SNAPSHOT.pom</pomFile>
                         </configuration>
                     </execution>
                 </executions>
