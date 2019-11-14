@@ -108,6 +108,11 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.8</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.1.0</version>
                 </plugin>
@@ -135,11 +140,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.8.2</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>exec-maven-plugin</artifactId>
-                    <version>1.6.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -377,29 +377,39 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>fix-line-endings</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>exec</goal>
+                            <goal>run</goal>
                         </goals>
                         <configuration>
-                            <executable>bash</executable>
-                            <commandlineArgs>-c 'case "$OSTYPE" in cygwin*) find target/dependency -name \*.pom | xargs dos2unix -k ;; esac'</commandlineArgs>
+                            <target name="fix-line-endings">
+                                <fixcrlf srcdir="target/dependency"
+                                         includes="*.pom"
+                                         eol="lf"
+                                         fixlast="false"/>
+                            </target>
                         </configuration>
                     </execution>
                     <execution>
                         <id>fix-permissions</id>
                         <phase>install</phase>
                         <goals>
-                            <goal>exec</goal>
+                            <goal>run</goal>
                         </goals>
                         <configuration>
-                            <executable>bash</executable>
-                            <commandlineArgs>-c 'case "$OSTYPE" in cygwin*) find repository -type f | xargs chmod a-x ;; esac'</commandlineArgs>
+                            <target name="fix-permissions">
+                                <exec executable="sh.exe"
+                                      osfamily="windows"
+                                      failifexecutionfails="false">
+                                    <arg value="-c"/>
+                                    <arg value="find repository -type f | xargs chmod a-x"/>
+                                </exec>
+                            </target>
                         </configuration>
                     </execution>
                 </executions>
