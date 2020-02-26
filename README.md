@@ -33,7 +33,7 @@ this blog
 
 - Install Java 8 OpenJDK if needed
 - Install Apache Maven if needed
-- Check out SADL's AugmentedTypes branch from GitHub
+- Check out SADL's development branch from GitHub
 - Start a Maven build in sadl3/com.ge.research.sadl.parent
 
 The first build may take up to one hour since Maven may have to
@@ -50,7 +50,7 @@ git clone https://github.com/crapo/sadlos2.git
 # change to the right directory
 cd sadlos2/sadl3/com.ge.research.sadl.parent
 # change to the right branch
-git checkout AugmentedTypes
+git checkout development
 # delete any old files
 mvn clean
 # build new files
@@ -78,7 +78,7 @@ mvn install
 # add any new files
 git add .
 # commit any new or changed files
-git commit -m "Maven artifacts for 3.2.0-SNAPSHOT"
+git commit -m "Maven artifacts for 3.2.1-SNAPSHOT"
 # push any changes back to GitHub
 git push
 ```
