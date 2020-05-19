@@ -4,8 +4,8 @@
   <artifactId>reasoner-impl</artifactId>
   <versioning>
     <versions>
-      <version>3.2.1-SNAPSHOT</version>
+      <version>3.3.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20200226213950</lastUpdated>
+    <lastUpdated>20200519161145</lastUpdated>
   </versioning>
 </metadata>

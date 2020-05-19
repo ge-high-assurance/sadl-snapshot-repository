@@ -4,8 +4,8 @@
   <artifactId>com.ge.research.sadl.reasoner</artifactId>
   <versioning>
     <versions>
-      <version>3.2.1-SNAPSHOT</version>
+      <version>3.3.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20200226213948</lastUpdated>
+    <lastUpdated>20200519161144</lastUpdated>
   </versioning>
 </metadata>
