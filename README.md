@@ -8,7 +8,8 @@ only release versions of dependencies.
 We can use this GitHub project as a Maven repository by putting a
 repositories section in a pom.xml like this:
 
-**pom.xml**
+## pom.xml
+
 ```xml
 <!-- This microrepository has our SADL dependencies -->
 <repositories>
@@ -44,11 +45,11 @@ to build new files in much less time than the first build will take.
 
 ```bash
 # clone SADL's GitHub project
-git clone git@github.com:crapo/sadlos2.git
+git clone git@github.com:SemanticApplicationDesignLanguage/sadl.git
 # or
-git clone https://github.com/crapo/sadlos2.git
+git clone https://github.com/SemanticApplicationDesignLanguage/sadl.git
 # change to the right directory
-cd sadlos2/sadl3/com.ge.research.sadl.parent
+cd sadl/sadl3/com.ge.research.sadl.parent
 # change to the right branch
 git checkout development
 # delete any old files
@@ -74,11 +75,11 @@ git clone git@github.com:ge-high-assurance/sadl-snapshot-repository.git
 # change to this directory
 cd sadl-snapshot-repository
 # update the SADL snapshot dependencies
-mvn install
+mvn clean install
 # add any new files
 git add .
 # commit any new or changed files
-git commit -m "Update SADL 3.3.0-SNAPSHOT artifacts"
+git commit -m "Update SADL 3.4.1-SNAPSHOT artifacts"
 # push any changes back to GitHub
 git push
 ```

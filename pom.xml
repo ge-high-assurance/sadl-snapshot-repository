@@ -4,7 +4,7 @@
 
     <groupId>com.ge.verdict</groupId>
     <artifactId>sadl-snapshot-repository</artifactId>
-    <version>3.3.0-SNAPSHOT</version>
+    <version>3.4.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>SADL Snapshot Repository</name>
