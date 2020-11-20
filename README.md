@@ -75,7 +75,7 @@ git clone git@github.com:ge-high-assurance/sadl-snapshot-repository.git
 # change to this directory
 cd sadl-snapshot-repository
 # update the SADL snapshot dependencies
-mvn clean install
+mvn install
 # add any new files
 git add .
 # commit any new or changed files
