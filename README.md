@@ -79,7 +79,7 @@ mvn install
 # add any new files
 git add .
 # commit any new or changed files
-git commit -m "Update SADL 3.4.1-SNAPSHOT artifacts"
+git commit -m "Update SADL 3.5.0-SNAPSHOT artifacts"
 # push any changes back to GitHub
 git push
 ```

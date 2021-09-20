@@ -4,7 +4,7 @@
 
     <groupId>com.ge.verdict</groupId>
     <artifactId>sadl-snapshot-repository</artifactId>
-    <version>3.4.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>SADL Snapshot Repository</name>
@@ -17,28 +17,30 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <version.iml>1.0.0-SNAPSHOT</version.iml>
+        <version.sadl>3.5.0-SNAPSHOT</version.sadl>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.errorgenerator</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.ide</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.jena</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.ge.research.sadl</groupId>
@@ -49,56 +51,56 @@
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.jena-wrapper-for-sadl</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.parent</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.reasoner</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>com.ge.research.sadl.server</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>reasoner-api</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>reasoner-impl</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>sadlserver-api</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.ge.research.sadl</groupId>
             <artifactId>sadlserver-impl</artifactId>
-            <version>${project.version}</version>
+            <version>${version.sadl}</version>
         </dependency>
         <dependency>
             <groupId>com.utc.utrc.hermes.iml</groupId>
             <artifactId>com.utc.utrc.hermes.iml.parent</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${version.iml}</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>com.utc.utrc.hermes.iml</groupId>
             <artifactId>com.utc.utrc.hermes.iml</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${version.iml}</version>
         </dependency>
     </dependencies>
 
@@ -221,9 +223,9 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl-${project.version}.jar</file>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl-${version.sadl}.jar</file>
                             <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl-${project.version}.pom</pomFile>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -233,9 +235,9 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl.errorgenerator-${project.version}.jar</file>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.errorgenerator-${version.sadl}.jar</file>
                             <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.errorgenerator-${project.version}.pom</pomFile>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.errorgenerator-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -245,9 +247,9 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl.ide-${project.version}.jar</file>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.ide-${version.sadl}.jar</file>
                             <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.ide-${project.version}.pom</pomFile>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.ide-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -257,9 +259,9 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl.jena-${project.version}.jar</file>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.jena-${version.sadl}.jar</file>
                             <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.jena-${project.version}.pom</pomFile>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.jena-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -269,9 +271,9 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${project.version}.jar</file>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${version.sadl}.jar</file>
                             <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${project.version}.pom</pomFile>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.jena-wrapper-for-sadl-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -281,8 +283,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl.parent-${project.version}.pom</file>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.parent-${project.version}.pom</pomFile>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.parent-${version.sadl}.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.parent-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -292,8 +294,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl.reasoner-${project.version}.pom</file>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.reasoner-${project.version}.pom</pomFile>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.reasoner-${version.sadl}.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.reasoner-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -303,8 +305,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.ge.research.sadl.server-${project.version}.pom</file>
-                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.server-${project.version}.pom</pomFile>
+                            <file>${project.build.directory}/dependency/com.ge.research.sadl.server-${version.sadl}.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.server-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -314,8 +316,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/reasoner-api-${project.version}.jar</file>
-                            <pomFile>${project.build.directory}/dependency/reasoner-api-${project.version}.pom</pomFile>
+                            <file>${project.build.directory}/dependency/reasoner-api-${version.sadl}.jar</file>
+                            <pomFile>${project.build.directory}/dependency/reasoner-api-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -325,8 +327,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/reasoner-impl-${project.version}.jar</file>
-                            <pomFile>${project.build.directory}/dependency/reasoner-impl-${project.version}.pom</pomFile>
+                            <file>${project.build.directory}/dependency/reasoner-impl-${version.sadl}.jar</file>
+                            <pomFile>${project.build.directory}/dependency/reasoner-impl-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -336,8 +338,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/sadlserver-api-${project.version}.jar</file>
-                            <pomFile>${project.build.directory}/dependency/sadlserver-api-${project.version}.pom</pomFile>
+                            <file>${project.build.directory}/dependency/sadlserver-api-${version.sadl}.jar</file>
+                            <pomFile>${project.build.directory}/dependency/sadlserver-api-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -347,8 +349,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/sadlserver-impl-${project.version}.jar</file>
-                            <pomFile>${project.build.directory}/dependency/sadlserver-impl-${project.version}.pom</pomFile>
+                            <file>${project.build.directory}/dependency/sadlserver-impl-${version.sadl}.jar</file>
+                            <pomFile>${project.build.directory}/dependency/sadlserver-impl-${version.sadl}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -358,8 +360,8 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.iml.parent-1.0.0-SNAPSHOT.pom</file>
-                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.iml.parent-1.0.0-SNAPSHOT.pom</pomFile>
+                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.iml.parent-${version.iml}.pom</file>
+                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.iml.parent-${version.iml}.pom</pomFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -369,9 +371,9 @@
                         </goals>
                         <phase>install</phase>
                         <configuration>
-                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.iml-1.0.0-SNAPSHOT.jar</file>
+                            <file>${project.build.directory}/dependency/com.utc.utrc.hermes.iml-${version.iml}.jar</file>
                             <packaging>jar</packaging>
-                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.iml-1.0.0-SNAPSHOT.pom</pomFile>
+                            <pomFile>${project.build.directory}/dependency/com.utc.utrc.hermes.iml-${version.iml}.pom</pomFile>
                         </configuration>
                     </execution>
                 </executions>
