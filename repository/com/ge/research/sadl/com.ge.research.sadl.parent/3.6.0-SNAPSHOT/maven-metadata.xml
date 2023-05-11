@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.ge.research.sadl</groupId>
+  <artifactId>com.ge.research.sadl.parent</artifactId>
+  <versioning>
+    <lastUpdated>20230511172925</lastUpdated>
+    <snapshot>
+      <timestamp>20230511.172925</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>3.6.0-20230511.172925-1</value>
+        <updated>20230511172925</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>3.6.0-SNAPSHOT</version>
+</metadata>

@@ -32,10 +32,10 @@ this blog
 
 ## How to update these SADL snapshot dependencies
 
-- Install Java 8 or 11 if needed
+- Install Java 17 if needed
 - Install Apache Maven if needed
 - Check out SADL's development branch from GitHub
-- Run Maven install in sadl3/com.ge.research.sadl.parent
+- Run mvn install in sadl3/com.ge.research.sadl.parent
 
 The first build may take up to one hour since Maven may have to
 download many poms and jars into its local repository.  Afterwards,
@@ -59,7 +59,7 @@ mvn install
 ```
 
 - Check out this project from GitHub
-- Update the SADL snapshot dependencies
+- Run mvn install to update the SADL snapshot dependencies
 - Commit any new changes back to GitHub
 
 These steps will update the snapshot versions of the SADL
@@ -79,7 +79,7 @@ mvn install
 # add any new files
 git add .
 # commit any new or changed files
-git commit -m "Update SADL 3.5.0-SNAPSHOT artifacts"
+git commit -m "Update SADL 3.6.0-SNAPSHOT artifacts"
 # push any changes back to GitHub
 git push
 ```
