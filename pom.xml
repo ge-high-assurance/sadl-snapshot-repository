@@ -72,6 +72,12 @@
     </dependency>
     <dependency>
       <groupId>com.ge.research.sadl</groupId>
+      <artifactId>com.ge.research.sadl.xtextgenerator</artifactId>
+      <version>${version.sadl}</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.ge.research.sadl</groupId>
       <artifactId>reasoner-api</artifactId>
       <version>${version.sadl}</version>
     </dependency>
@@ -369,6 +375,17 @@
             <configuration>
               <file>${project.build.directory}/dependency/com.ge.research.sadl.server-${version.sadl}.pom</file>
               <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.server-${version.sadl}.pom</pomFile>
+            </configuration>
+          </execution>
+          <execution>
+            <id>deploy-com.ge.research.sadl.xtextgenerator</id>
+            <goals>
+              <goal>deploy-file</goal>
+            </goals>
+            <phase>install</phase>
+            <configuration>
+              <file>${project.build.directory}/dependency/com.ge.research.sadl.xtextgenerator-${version.sadl}.pom</file>
+              <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.xtextgenerator-${version.sadl}.pom</pomFile>
             </configuration>
           </execution>
           <execution>

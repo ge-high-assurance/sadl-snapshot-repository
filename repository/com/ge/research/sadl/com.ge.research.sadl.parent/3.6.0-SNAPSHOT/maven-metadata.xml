@@ -3,16 +3,16 @@
   <groupId>com.ge.research.sadl</groupId>
   <artifactId>com.ge.research.sadl.parent</artifactId>
   <versioning>
-    <lastUpdated>20230515153816</lastUpdated>
+    <lastUpdated>20230515160616</lastUpdated>
     <snapshot>
-      <timestamp>20230515.153816</timestamp>
+      <timestamp>20230515.160616</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.6.0-20230515.153816-1</value>
-        <updated>20230515153816</updated>
+        <value>3.6.0-20230515.160616-1</value>
+        <updated>20230515160616</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
