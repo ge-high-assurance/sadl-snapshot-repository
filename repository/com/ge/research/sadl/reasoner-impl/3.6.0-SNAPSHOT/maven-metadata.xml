@@ -3,21 +3,21 @@
   <groupId>com.ge.research.sadl</groupId>
   <artifactId>reasoner-impl</artifactId>
   <versioning>
-    <lastUpdated>20230511172925</lastUpdated>
+    <lastUpdated>20230515153816</lastUpdated>
     <snapshot>
-      <timestamp>20230511.172925</timestamp>
+      <timestamp>20230515.153816</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.6.0-20230511.172925-1</value>
-        <updated>20230511172925</updated>
+        <value>3.6.0-20230515.153816-1</value>
+        <updated>20230515153816</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.6.0-20230511.172925-1</value>
-        <updated>20230511172925</updated>
+        <value>3.6.0-20230515.153816-1</value>
+        <updated>20230515153816</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

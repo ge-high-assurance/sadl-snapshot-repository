@@ -18,6 +18,11 @@
   <dependencies>
     <dependency>
       <groupId>com.ge.research.sadl</groupId>
+      <artifactId>com.ge.research.jena</artifactId>
+      <version>${version.sadl}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ge.research.sadl</groupId>
       <artifactId>com.ge.research.sadl</artifactId>
       <version>${version.sadl}</version>
     </dependency>
@@ -261,6 +266,18 @@
           <url>file://${project.basedir}/repository</url>
         </configuration>
         <executions>
+          <execution>
+            <id>deploy-com.ge.research.jena</id>
+            <goals>
+              <goal>deploy-file</goal>
+            </goals>
+            <phase>install</phase>
+            <configuration>
+              <file>${project.build.directory}/dependency/com.ge.research.jena-${version.sadl}.jar</file>
+              <packaging>jar</packaging>
+              <pomFile>${project.build.directory}/dependency/com.ge.research.jena-${version.sadl}.pom</pomFile>
+            </configuration>
+          </execution>
           <execution>
             <id>deploy-com.ge.research.sadl</id>
             <goals>

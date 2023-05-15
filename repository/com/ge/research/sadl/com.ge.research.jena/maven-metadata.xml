@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ge.research.sadl</groupId>
+  <artifactId>com.ge.research.jena</artifactId>
+  <versioning>
+    <versions>
+      <version>3.6.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20230515153816</lastUpdated>
+  </versioning>
+</metadata>
