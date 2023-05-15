@@ -74,7 +74,6 @@
       <groupId>com.ge.research.sadl</groupId>
       <artifactId>com.ge.research.sadl.xtextgenerator</artifactId>
       <version>${version.sadl}</version>
-      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.ge.research.sadl</groupId>
@@ -384,7 +383,7 @@
             </goals>
             <phase>install</phase>
             <configuration>
-              <file>${project.build.directory}/dependency/com.ge.research.sadl.xtextgenerator-${version.sadl}.pom</file>
+              <file>${project.build.directory}/dependency/com.ge.research.sadl.xtextgenerator-${version.sadl}.jar</file>
               <pomFile>${project.build.directory}/dependency/com.ge.research.sadl.xtextgenerator-${version.sadl}.pom</pomFile>
             </configuration>
           </execution>

@@ -3,21 +3,21 @@
   <groupId>com.ge.research.sadl</groupId>
   <artifactId>com.ge.research.sadl.errorgenerator</artifactId>
   <versioning>
-    <lastUpdated>20230515160616</lastUpdated>
+    <lastUpdated>20230515165121</lastUpdated>
     <snapshot>
-      <timestamp>20230515.160616</timestamp>
+      <timestamp>20230515.165121</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.6.0-20230515.160616-1</value>
-        <updated>20230515160616</updated>
+        <value>3.6.0-20230515.165121-1</value>
+        <updated>20230515165121</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.6.0-20230515.160616-1</value>
-        <updated>20230515160616</updated>
+        <value>3.6.0-20230515.165121-1</value>
+        <updated>20230515165121</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
